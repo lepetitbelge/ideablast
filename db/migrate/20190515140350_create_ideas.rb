@@ -5,7 +5,7 @@ class CreateIdeas < ActiveRecord::Migration[5.2]
       t.text :content
       t.datetime :moment_to_be_delivered
       t.boolean :starred
-      t.reference :user
+      t.references :user
 
       t.timestamps
     end

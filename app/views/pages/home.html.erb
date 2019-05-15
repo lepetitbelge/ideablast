@@ -1,1 +1,15 @@
-<h1>HELLOOO</h1>
+<body class="home">
+  <%= image_tag("rocket2", class: "logo-home") %>
+  <% if user_signed_in? %>
+    <%= button_to "Blast away", '#', :id => "btn-custom-blast",
+        :class => "btn btn-custom", :method => :get %>
+    <% else %>
+    <div class="sign-in-up">
+      <%= button_to "Log in", '#', :id => "btn-custom-log-in",
+          :class => "btn btn-custom", :method => :get %>
+      <%= button_to "Sign up", '#', :id => "btn-custom-sign-up",
+          :class => "btn btn-custom", :method => :get %>
+    </div>
+  <% end %>
+</body>
+

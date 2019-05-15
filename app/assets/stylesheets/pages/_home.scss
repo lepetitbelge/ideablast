@@ -1,1 +1,40 @@
-// Specific CSS for your home-page
+.home {
+  background-color: rgb(255, 151, 1);
+  height: 100vh;
+}
+.logo-home {
+  background-color: white;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 50%;
+  left: 50%;
+  border-radius: 1.5rem;
+}
+.btn-custom {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  height: 5rem;
+  width: 100%;
+}
+#btn-custom-blast {
+  background-color: rgb(253, 193, 3);
+  position: absolute;
+  bottom: 0;
+}
+.sign-in-up {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#btn-custom-log-in {
+  background-color: rgb(28, 192, 213);
+}
+#btn-custom-sign-up {
+  background-color: rgb(239, 58, 119);
+}
+

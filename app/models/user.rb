@@ -12,8 +12,8 @@ class User < ApplicationRecord
   private
 
   def date_must_be_in_future
-    return if moment_to_be_delivered
+    return if delivery_time
 
-    errors.add(:moment_to_be_delivered, "can't be in past") if moment_to_be_delivered < DateTime.now
+    errors.add(:delivery_time, "can't be in past") if delivery_time < DateTime.now
   end
 end
